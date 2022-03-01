@@ -8,4 +8,4 @@
 
 
 
-Reference :s do it 자료구조와 함께하는 알고리즘 입문 파이썬편
+Reference : do it 자료구조와 함께하는 알고리즘 입문 파이썬편

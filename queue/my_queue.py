@@ -29,7 +29,7 @@ class Queue:
 
     def is_full(self):
 
-        return self.num >= self.capacity
+        return (self.rear +1) % self.capacity == self.front
 
     def enque(self, x: Any)-> None:
 
@@ -57,9 +57,12 @@ class Queue:
         return self.queue[self.front]
 
     def find(self, value:Any) -> Any:
-
+        print(self.num)
+        print("------")
         for i in range(self.num):
-            idx = (i + self.front) % self.capacity
+            idx = (i + self.front)%(self.capacity)
+            print(idx,self.queue[idx])
+            print(value)
             if self.queue[idx] == value:
                 return idx
         return -1
